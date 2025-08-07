@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e4ef);
+  color: #333;
+}
+
+header {
+  background: #0077b6;
+  color: #fff;
+  padding: 1.5em 0;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ciclo {
+  margin-bottom: 1em;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.ciclo:hover {
+  transform: scale(1.02);
+}
+
+.ciclo-header {
+  padding: 1em;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #005f8a;
+  position: relative;
+}
+
+.ciclo-header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #ffdd57;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.ciclo-content {
+  display: none;
+  padding: 1em;
+  background: #ffffff;
+  border-top: 2px solid #0a0a0a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background: #e0e0e0;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #080808;
+  background: #0027d6;
+  margin-top: 2em;
+  border-top: 1px solid #ccc;
+}
